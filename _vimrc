@@ -8,6 +8,16 @@ behave mswin
 " KEY REMAPS
 imap ;; <Esc>
 
+" Disable's Vi compatability
+set nocompatible
+
+" Set UTF-8
+:set encoding=utf-8
+:set fileencodings=utf-8
+
+" Set Highlight Search
+set hlsearch
+
 " Display line and column number in bottom ruler.
 set ruler
 
@@ -16,6 +26,9 @@ set number
 
 " Activate syntax highlighting.
 syntax enable
+
+" Spell check on
+set spell spelllang=en_us
 
 " Set a nice theme.
 color darkblue 
