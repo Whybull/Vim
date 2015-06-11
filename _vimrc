@@ -27,6 +27,10 @@ set number
 " Activate syntax highlighting.
 syntax enable
 
+" Enable automatic file type detection and auto completion
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
+
 " Spell check on
 set spell spelllang=en_us
 
