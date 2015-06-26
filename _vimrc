@@ -2,8 +2,13 @@
 call pathogen#infect()
 
 " Activate all the handy Windows key-bindings we're used to.
-source $VIMRUNTIME/mswin.vim
-behave mswin
+" source $VIMRUNTIME/mswin.vim
+" behave mswin
+
+set clipboard=unnamed
+
+" Disable's Vi compatability
+set nocompatible
 
 " KEY REMAPS
 imap ;; <Esc>
