@@ -12,9 +12,17 @@ set nocompatible
 
 " KEY REMAPS
 imap ;; <Esc>
+let mapleader = "<\space>"
+nnoremap <Esc> :noh <Return>
+
+set backspace=indent,eol,start " Backspace behaves as expected
 
 " Disable's Vi compatability
 set nocompatible
+
+" -- Beep
+set visualbell            " Prevent Vim from beeping
+set noerrorbells          " Prevent Vim from beeping
 
 " Set UTF-8
 :set encoding=utf-8
@@ -42,7 +50,7 @@ set omnifunc=syntaxcomplete#Complete
 set spell spelllang=en_us
 
 " Set a nice theme.
-color darkblue 
+color blue 
 
 if has("gui_running")
   " Set a nicer font.
