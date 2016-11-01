@@ -33,7 +33,9 @@ set number
 syntax enable
 
 " Enable automatic file type detection and auto completion
+filetype on
 filetype plugin on
+filetype indent on
 set omnifunc=syntaxcomplete#Complete
 
 " Spell check on
